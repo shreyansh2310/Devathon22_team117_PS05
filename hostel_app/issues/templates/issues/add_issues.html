@@ -1,19 +1,146 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heading {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>This is adding issues page!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(192, 241, 192);
+        }
+    </style>
+
+    <div class="heading">
+        <h1>STUDENT'S INFO</h1>
+    </div>
+    <table class="center">
+        <form>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="name"><b>NAME:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" size="40" name="name" required><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="MobileNo"><b>MOBILE NO:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="MobileNo" size="10" name="MobileNo" required><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Availability"><b>Availability:</b></label>
+                </td>
+                <td>
+                    <input type="time" id="Availability" name="Availability" required>
+                    <label for="To">To</label>
+                    <input type="time" id="Availability" name="Availability" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="Registration No"><b>REGISTRATION NO:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Registration No" size="10" name="Registration No" required><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="HostelName"><b>HOSTEL NAME:</b></label>
+                    </td>
+                    <td>
+                        <select id="HostelName" name="HostelName" size="" required>
+                            <option value="none" selected disabled hidden>Select an Option</option>
+                            <option value="SarojiniHall">Sarojini Hall</option>
+                            <option value="PriyadarshiniHall">Priyadarshini Hall</option>
+                            <option value="NewLH">New LH</option>
+                            <option value="1.8k">1.8k</option>
+                            <option value="1k">1k</option>
+                            <option value="Blocks">Blocks</option>
+                        </select><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="RoomNo"><b>ROOM NO:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Room No" size="10" name="RoomNo" required><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="ProblemType"><b>PROBLEM TYPE:</b></label>
+                    </td>
+                    <td>
+                        <select id="ProblemType" name="ProblemType" size="" required>
+                            <option value="none" selected disabled hidden>Select an Option</option>
+                            <option value="Carpentryissue">Carpentry Issue</option>
+                            <option value="Electrical Issue">Electrical Issue</option>
+                            <option value="NetworkIssue">Network Issue</option>
+                            <option value="Others">Others</option>
+                        </select><br><br>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form action="/action_page.php">
+                    <td>
+                        <label for="ProblemDescription"><b>PROBLEM DESCRIPTION:</b></label>
+                    </td>
+                    <td>
+                        <textarea id="ProblemDescription" name="ProblemDescription" rows="10" cols="50"
+                            required></textarea>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Status"><b>STATUS:</b></label>
+                </td>
+                <td>
+                    <label for="Pending">Pending</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-submit">Submit</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-submit">Back</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+
+
 </body>
 
 </html>

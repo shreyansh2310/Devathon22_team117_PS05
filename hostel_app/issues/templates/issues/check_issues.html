@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heading {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <style>
+        body {
+            background-color: rgb(192, 241, 192);
+        }
+    </style>
+    <div class="heading">
+        <h1>CURRENT STATE OF THE ISSUE</h1>
+    </div>
+
+    <table class="center">
+        <form method='POST' action="">
+            {% csrf_token %}
+            <tr>
+                <form action="">
+                    <td>
+                        <label for="name"><b>NAME:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" size="40" name="name" required><br><br>
+                    </td>
+                </form>
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    <label for="Registration No"><b>REGISTRATION NO:</b></label>
+                </td>
+                <td>
+                    <input type="text" id="Registration No" size="10" name="Registration No" required><br><br>
+                </td>
+
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-submit">Back</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

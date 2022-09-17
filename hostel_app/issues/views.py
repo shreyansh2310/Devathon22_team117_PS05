@@ -15,4 +15,6 @@ def worker_login(request):
     return render(request,'isses/workers_login.html')
 
 def check_update(request):
-    return render(request,'issues/check_update.html')
+    if request.method=='POST':
+        return render(request,'issues/check_update.html')
+    return render(request,'issues/check_issues.html')

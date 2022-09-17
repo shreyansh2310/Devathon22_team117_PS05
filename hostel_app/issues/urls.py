@@ -8,6 +8,6 @@ urlpatterns = [
     path('add_issues/',issue.add_issues,name="add_issues"),
     path('previous/',issue.previous_issues,name="previous_issues"),
     path('worker_login/',issue.worker_login,name="worker_login"),
-    
+    # path('',issue.home,name="home"),
     # path('user/',include('users.urls'),name='user_page'),
 ]
